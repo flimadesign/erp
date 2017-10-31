@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breda's Sistemas - Softwares Empresariais">
+  <title>ERP</title>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/base/css/style.css" rel="stylesheet">
+  <link href="../../assets/base/css/custom.css" rel="stylesheet">
+  <link href="../../assets/base/css/simple-sidebar.css" rel="stylesheet">
+  <link href="../../assets/base/awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/base/themify-icons/themify-icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<div id="app" class="bg-gray-1">
+
+  <div id="wrapper" class="toggled">
+
+   <!-- Sidebar -->
+   <div id="sidebar-wrapper" class="bg-white">
+
+
+    <div class="sidebar-brand">
+
+
+        <a href="#menu-toggle" id="menu-toggle"><i class="ti-menu" aria-hidden="true">&nbsp;</i></a>
+    </div>
+
+
+
+
+    <ul id="ul-sidebar" class="sidebar-nav">
+
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-clipboard" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Cadastros</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li><a href="http://localhost/novoerp2/financeiro/movimento-financeiro/index.html?#" class="nhoodButton"><i class="ti-bar-chart-alt" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Financeiro</span></a></li>
+      <li><a href="http://localhost/novoerp2/financeiro/movimento-bancario/index.html?#" class="nhoodButton"><i class="ti-exchange-vertical" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Bancário</span></a></li>
+
+    </ul>
+
+
+
+        
+
+  </div>
+
+
+
+  <!-- /#sidebar-wrapper -->
+
+
+
+  <!-- Page Content -->
+
+
+
+  <div id="page-content-wrapper">
+
+
+    <nav class="navbar" role="navigation">
+
+      <div class="container-fluid">
+
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+
+        <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="http://localhost/novoerp2/inicio/acesso/index.html?#">Início</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/cadastros/parceiro/index.html?#">Cadastros</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/compras/requisicao/index.html?#">Compras</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/vendas/index.html?#">Vendas</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/logistica/index.html?#">Logística</a>
+          </li>
+          <li class="active">
+            <a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Financeiro</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/servicos/index.html?#">Serviços</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#">Configurar</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sair</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+
+    <div class="box-top-bar bg-white">
+
+
+
+ <div class="title-page">Movimento Financeiro</div>
+
+ <div class="map-title">Financeiro <i class="ti-angle-right" aria-hidden="true"></i> Movimento Financeiro </div>
+
+
+    </div>
+
+
+
+    <div class="inner-page-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab-header">
+        <ul class="nav nav-tabs nav-justified">
+
+          <li class="li-tab active">
+            <a href="#screen-1" aria-controls="screen-1" role="tab" data-toggle="tab">Título Aberto</a>
+          </li>
+
+          <li class="li-tab">
+            <a href="#screen-2" aria-controls="screen-2" role="tab" data-toggle="tab">Título Baixa</a>
+          </li>
+
+        </ul>
+        <div class="line-tab"></div>
+      </div>
+
+      <div class="padding-20">
+
+      <div class="tab-content">
+
+
+
+        <form role="tabpanel" class="form-horizontal tab-pane active margin-top-20" id="screen-1">
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+            <div id="listaEntrada">
+           
+
+
+    <div class="filtro-tabela">
+            <div class="row-table">
+              <span id="addEntrada">
+              <button class="btn btn-primary"><i class="ti-plus" aria-hidden="true"></i> Novo</button>
+              </span>
+              <i class="space-button"></i>
+              <button disabled="disabled" class="btn btn-danger"><i class="ti-trash" aria-hidden="true"></i> Excluir</button>
+            </div>
+            <div class="row-table">
+              <label class="label-table" for="">Buscar Por:</label> 
+                  <select class="form-control max-w-200" aria-required="true" aria-invalid="false">
+                    <option value="">Nota</option>
+                    <option value="">Nota</option>
+                    <option value="">Nota</option>
+                  </select> 
+                  <i class="space-button"></i>
+                  <label class="label-table" for="">Digite para Pesquisar:</label> 
+                  <input type="text" class="form-control">
+            </div> 
+            </div>
+
+
+    
+    <div class="scroller">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Documento</th>
+            <th>Tipo</th>
+            <th>Parceiro</th>
+            <th>Emissão</th>
+            <th>Entrada</th>
+            <th>Vencimento</th>
+            <th>Valor</th>
+            <th>Vendedor</th>
+            <th>Situação</th>
+            <th class="minima-td">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="novoEntrada">
+    <div class="card-add">
+    <div class="top-card">Entrada de Títulos</div>
+
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Tipo</label>
+          <select class="form-control">
+            <option>Débito</option>
+            <option>Crédito</option>
+          </select>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Número Documento</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Número Nota</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <label for="">Parceiro</label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#unidadeModal"><a href="#">&equiv;</a></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Referência</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Data Emissão</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Entrada</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Vencimento</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Valor</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Carteira Cobrança</label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#carteiraModal"><a href="#">&equiv;</a></span>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Plano Conta</label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#contaPaiModal"><a href="#">&equiv;</a></span>
+          </div>
+        </div>
+         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Vendedor</label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#vendedorModal"><a href="#">&equiv;</a></span>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Nosso Número</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Situação</label>
+           <select class="form-control" aria-required="true" aria-invalid="false">
+          <option>Ativa</option> 
+          <option>Cancelada</option> 
+        </select>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+          <label for="">Motivo</label>
+          <input type="text" disabled="disabled" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Data</label>
+          <input type="date" disabled="disabled" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <label for="">Observação</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="bottom-card">
+      <button class="btn btn-info space-column">Cancelar</button>
+      <span id="incluirEntrada">
+      <button class="btn btn-primary space-column">Incluir</button>
+      </span>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+        </form>
+
+
+
+        <form role="tabpanel" class="form-horizontal tab-pane margin-top-20" id="screen-2">
+
+
+            
+
+<div id="listaBaixa">
+          <div class="filtro-tabela">
+            <div class="row-table">
+              <span id="addBaixa">
+              <button class="btn btn-primary"><i class="ti-plus" aria-hidden="true"></i> Novo</button>
+              </span>
+              <i class="space-button"></i>
+              <button disabled="disabled" class="btn btn-danger"><i class="ti-trash" aria-hidden="true"></i> Excluir</button>
+            </div>
+            <div class="row-table">
+              <label class="label-table" for="">Buscar Por:</label> 
+                  <select class="form-control max-w-200" aria-required="true" aria-invalid="false">
+                    <option value="">Nota</option>
+                    <option value="">Nota</option>
+                    <option value="">Nota</option>
+                  </select> 
+                  <i class="space-button"></i>
+                  <label class="label-table" for="">Digite para Pesquisar:</label> 
+                  <input type="text" class="form-control">
+            </div> 
+            </div>
+
+
+    
+    <div class="scroller">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Documento</th>
+            <th>Tipo</th>
+            <th>Parceiro</th>
+            <th>Emissão</th>
+            <th>Entrada</th>
+            <th>Vencimento</th>
+            <th>Valor</th>
+            <th>Vendedor</th>
+            <th>Situação</th>
+            <th class="minima-td">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="novoBaixa">
+    <div class="card-add">
+    <div class="top-card">Baixa de Títulos</div>
+
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Tipo</label>
+          <select class="form-control">
+            <option>Débito</option>
+            <option>Crédito</option>
+          </select>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <label for="">Cliente</label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#parceiroModal"><a href="#">&equiv;</a></span>
+          </div>
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Recebimento</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">% Mora Atraso</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="scroller">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="select-td"><input type="checkbox" name=""></th>
+            <th>Documento</th>
+            <th>Tipo</th>
+            <th>Parceiro</th>
+            <th>Emissão</th>
+            <th>Entrada</th>
+            <th>Vencimento</th>
+            <th>Valor</th>
+            <th>Vendedor</th>
+            <th>Situação</th>
+            <th class="minima-td">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-toggle="modal" data-target="#caixaModal">
+            <td class="select-td"><input type="checkbox" name=""></td>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr data-toggle="modal" data-target="#caixaModal">
+            <td class="select-td"><input type="checkbox" name=""></td>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr data-toggle="modal" data-target="#caixaModal">
+            <td class="select-td"><input type="checkbox" name=""></td>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr data-toggle="modal" data-target="#caixaModal">
+            <td class="select-td"><input type="checkbox" name=""></td>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr data-toggle="modal" data-target="#caixaModal">
+            <td class="select-td"><input type="checkbox" name=""></td>
+            <td>Documento</td>
+            <td>Tipo</td>
+            <td>Parceiro</td>
+            <td>Emissão</td>
+            <td>Entdada</td>
+            <td>Vencimento</td>
+            <td>Valor</td>
+            <td>Vendedor</td>
+            <td>Situação</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+
+    <div class="row">
+
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <label for="">Baixar</label>
+          <select class="form-control">
+            <option>Total</option>
+            <option>Parcial</option>
+          </select>
+        </div>
+
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <label for="">Plano Conta</label>
+            <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#contaPaiModal"><a href="#">&equiv;</a></span>
+          </div>
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+        </div>
+
+
+  
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <label for="">Valor Juros</label>
+          <input type="number" class="form-control font-price" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <label for="">Valor Desconto</label>
+          <input type="number" class="form-control font-price" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <label for="">Valor Pago</label>
+          <input type="number" class="form-control font-price" placeholder="">
+        </div>
+      </div>
+
+
+
+
+
+
+      </div>
+
+    
+
+    <div class="bottom-card">
+
+      <button class="btn btn-info space-column">Cancelar</button>
+      <span id="incluirBaixa">
+      <button class="btn btn-primary space-column">Baixar</button>
+      </span>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+
+
+
+</div> <!-- /#page-content-wrapper -->
+
+</div> <!-- /#wrapper -->
+
+<footer>
+  <div class="text-footer">
+    <span>Desenvolvido por&nbsp;<a href="http://www.bredas.com.br" target="_blank">Breda's Sistemas</a></span>
+  </div>
+</footer>
+
+</div><!-- /#app -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/base/js/nav.js"></script>
+<script src="../../assets/base/js/side-bar.js"></script>
+
+<script type="text/javascript">
+  
+  /* ------------- Entrada -------------- */
+
+    document.getElementById("listaEntrada").style.display = "block";
+    document.getElementById("novoEntrada").style.display = "none";
+
+    document.getElementById("addEntrada").addEventListener("click", function(){
+      document.getElementById("listaEntrada").style.display = "none";
+      document.getElementById("novoEntrada").style.display = "block";
+    });
+
+    document.getElementById("incluirEntrada").addEventListener("click", function(){
+      document.getElementById("listaEntrada").style.display = "block";
+      document.getElementById("novoEntrada").style.display = "none";
+    });
+
+   /*  -------------------------------- */
+
+
+
+    /* ------------- Baixa -------------- */
+
+    document.getElementById("listaBaixa").style.display = "block";
+    document.getElementById("novoBaixa").style.display = "none";
+
+    document.getElementById("addBaixa").addEventListener("click", function(){
+      document.getElementById("listaBaixa").style.display = "none";
+      document.getElementById("novoBaixa").style.display = "block";
+    });
+
+    document.getElementById("incluirBaixa").addEventListener("click", function(){
+      document.getElementById("listaBaixa").style.display = "block";
+      document.getElementById("novoBaixa").style.display = "none";
+    });
+
+   /*  -------------------------------- */
+
+
+
+
+
+
+
+   /* ------------- Parceiro -------------- */
+
+    document.getElementById("listaParceiro").style.display = "block";
+    document.getElementById("novoParceiro").style.display = "none";
+
+    document.getElementById("addParceiro").addEventListener("click", function(){
+      document.getElementById("listaParceiro").style.display = "none";
+      document.getElementById("novoParceiro").style.display = "block";
+    });
+
+    document.getElementById("incluirParceiro").addEventListener("click", function(){
+      document.getElementById("listaParceiro").style.display = "block";
+      document.getElementById("novoParceiro").style.display = "none";
+    });
+
+   /*  -------------------------------- */
+
+
+
+
+</script>
+
+</body>
+</html>

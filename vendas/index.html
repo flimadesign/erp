@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breda's Sistemas - Softwares Empresariais">
+  <title>ERP</title>
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/base/css/style.css" rel="stylesheet">
+  <link href="../assets/base/css/custom.css" rel="stylesheet">
+  <link href="../assets/base/css/simple-sidebar.css" rel="stylesheet">
+  <link href="../assets/base/awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/base/themify-icons/themify-icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<div id="app" class="bg-gray-1">
+
+  <div id="wrapper" class="toggled">
+
+   <!-- Sidebar -->
+   <div id="sidebar-wrapper" class="bg-white">
+
+
+    <div class="sidebar-brand">
+
+
+        <a href="#menu-toggle" id="menu-toggle"><i class="ti-menu" aria-hidden="true">&nbsp;</i></a>
+    </div>
+
+
+
+
+    <ul id="ul-sidebar" class="sidebar-nav">
+
+      <!-- <li class="nhoodDrop active openInner">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-clipboard" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Cadastros</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="#">Tipo Documento</a></li>
+          <li><a href="#">Forma Pagamento</a></li>
+          <li><a href="#">Condição Pagamento</a></li>
+          <li><a href="#">Banco</a></li>
+          <li><a href="#">Carteira Cobrança</a></li>
+          <li><a href="#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="nhoodButton"><i class="ti-bar-chart-alt" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Financeiro</span></a></li>
+      <li><a href="#" class="nhoodButton"><i class="ti-exchange-vertical" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Bancário</span></a></li>
+ -->
+    </ul>
+
+
+
+        
+
+  </div>
+
+
+
+  <!-- /#sidebar-wrapper -->
+
+
+
+  <!-- Page Content -->
+
+
+
+  <div id="page-content-wrapper">
+
+
+    <nav class="navbar" role="navigation">
+
+      <div class="container-fluid">
+
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+
+        <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="http://localhost/novoerp2/inicio/acesso/index.html?#">Início</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/cadastros/parceiro/index.html?#">Cadastros</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/compras/requisicao/index.html?#">Compras</a>
+          </li>
+          <li class="active">
+            <a href="http://localhost/novoerp2/vendas/index.html?#">Vendas</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/logistica/index.html?#">Logística</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Financeiro</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/servicos/index.html?#">Serviços</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#">Configurar</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sair</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+
+    <div class="box-top-bar bg-white">
+
+
+
+ <div class="title-page">Vendas</div>
+
+ <div class="map-title">Vendas <!-- <i class="ti-angle-right" aria-hidden="true"></i> Cadastros <i class="ti-angle-right" aria-hidden="true"></i> Tipo Documento --></div>
+
+
+    </div>
+
+
+
+    <div class="inner-page-content">
+
+
+<div class="padding-20"></div>
+
+
+
+<!-- 
+
+
+
+      <div id="listaTipo">
+           <div class="filtro-tabela">
+      <div class="input-group input-group-search">
+            <input class="form-control bg-white" placeholder="Buscar..." aria-describedby="basic-addon1">
+            <button class="btn btn-info input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+      <span id="addTipo">
+      <button class="btn btn-primary">Novo</button>
+      </span>
+    </div>
+
+    <div class="scroller">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Tipo</th>
+            <th class="minima-td">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Descrição</td>
+            <td>Pagar</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Descrição</td>
+            <td>Receber</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Descrição</td>
+            <td>Pagar</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="novoTipo">
+    <div class="card-add">
+    <div class="top-card">Novo Tipo de Documento</div>
+
+
+      <div class="row">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+          <label for="">Descrição</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label for="">Tipo</label>
+          <select class="form-control">
+            <option>Pagar</option>
+            <option>Receber</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom-card">
+      <button class="btn btn-info space-column">Cancelar</button>
+      <span id="incluirTipo">
+      <button class="btn btn-primary space-column">Incluir</button>
+      </span>
+    </div>
+
+</div>
+
+
+ -->
+
+
+
+
+
+      
+    </div>
+
+
+
+
+</div> <!-- /#page-content-wrapper -->
+
+</div> <!-- /#wrapper -->
+
+<footer>
+  <div class="text-footer">
+    <span>Desenvolvido por&nbsp;<a href="http://www.bredas.com.br" target="_blank">Breda's Sistemas</a></span>
+  </div>
+</footer>
+
+</div><!-- /#app -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/base/js/nav.js"></script>
+<script src="../assets/base/js/side-bar.js"></script>
+
+
+</body>
+</html>

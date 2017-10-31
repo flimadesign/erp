@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breda's Sistemas - Softwares Empresariais">
+  <title>ERP</title>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/base/css/style.css" rel="stylesheet">
+  <link href="../../assets/base/css/custom.css" rel="stylesheet">
+  <link href="../../assets/base/css/simple-sidebar.css" rel="stylesheet">
+  <link href="../../assets/base/awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/base/themify-icons/themify-icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<div id="app" class="bg-gray-1">
+
+  <div id="wrapper" class="toggled">
+
+   <!-- Sidebar -->
+   <div id="sidebar-wrapper" class="bg-white">
+
+
+    <div class="sidebar-brand">
+
+
+        <a href="#menu-toggle" id="menu-toggle"><i class="ti-menu" aria-hidden="true">&nbsp;</i></a>
+    </div>
+
+
+
+
+    <ul id="ul-sidebar" class="sidebar-nav">
+
+      <li class="nhoodDrop active openInner">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-clipboard" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Cadastros</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li><a href="http://localhost/novoerp2/financeiro/movimento-financeiro/index.html?#" class="nhoodButton"><i class="ti-bar-chart-alt" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Financeiro</span></a></li>
+      <li><a href="http://localhost/novoerp2/financeiro/movimento-bancario/index.html?#" class="nhoodButton"><i class="ti-exchange-vertical" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Bancário</span></a></li>
+
+    </ul>
+
+
+
+        
+
+  </div>
+
+
+
+  <!-- /#sidebar-wrapper -->
+
+
+
+  <!-- Page Content -->
+
+
+
+  <div id="page-content-wrapper">
+
+
+    <nav class="navbar" role="navigation">
+
+      <div class="container-fluid">
+
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+
+        <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="http://localhost/novoerp2/inicio/acesso/index.html?#">Início</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/cadastros/parceiro/index.html?#">Cadastros</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/compras/requisicao/index.html?#">Compras</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/vendas/index.html?#">Vendas</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/logistica/index.html?#">Logística</a>
+          </li>
+          <li class="active">
+            <a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Financeiro</a>
+          </li>
+          <li>
+            <a href="http://localhost/novoerp2/servicos/index.html?#">Serviços</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#">Configurar</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sair</a></li>
+              </ul>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+
+    <div class="box-top-bar bg-white">
+
+
+
+ <div class="title-page">Carteira de Cobrança</div>
+
+ <div class="map-title">Financeiro <i class="ti-angle-right" aria-hidden="true"></i> Cadastros <i class="ti-angle-right" aria-hidden="true"></i> Carteira de Cobrança</div>
+
+
+    </div>
+
+
+
+    <div class="inner-page-content">
+
+
+
+
+
+
+
+
+<div class="padding-20">
+
+
+
+      <div id="listaCarteira">
+           <div class="filtro-tabela">
+            <div class="row-table">
+              <span id="addCarteira">
+              <button class="btn btn-primary"><i class="ti-plus" aria-hidden="true"></i> Novo</button>
+              </span>
+              <i class="space-button"></i>
+              <button disabled="disabled" class="btn btn-danger"><i class="ti-trash" aria-hidden="true"></i> Excluir</button>
+            </div>
+            <div class="row-table">
+              <label class="label-table" for="">Buscar Por:</label> 
+                  <select class="form-control max-w-200" aria-required="true" aria-invalid="false">
+                    <option value="">Nota</option>
+                    <option value="">Nota</option>
+                    <option value="">Nota</option>
+                  </select> 
+                  <i class="space-button"></i>
+                  <label class="label-table" for="">Digite para Pesquisar:</label> 
+                  <input type="text" class="form-control">
+            </div> 
+            </div>
+    <!-- <button class="btn btn-primary">+</button> -->
+    <div class="scroller">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Conta Corrente</th>
+            <th>Código Carteira</th>
+            <th>Código Convênio</th>
+            <th>Juros Mês</th>
+            <th>Taxa Cobrança</th>
+            <th>Multa Prazo</th>
+            <th>Tipo Carteira</th>
+            <th>Dias Protesto</th>
+            <th>Dias Devolução</th>
+            <th>Especificação Título</th>
+            <th>Emite Remessa Banco</th>
+            <th>Forma Emissão Boleto</th>
+            <th>Tipo Layout</th>
+            <th>Layout Arquivo Remessa</th>
+            <th>Tipo Cobrança</th>
+            <th>Instruções</th>
+            <th class="minima-td">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Conta Corrente</td>
+            <td>Código Carteira</td>
+            <td>Código Convênio</td>
+            <td>Juros Mês</td>
+            <td>Taxa Cobrança</td>
+            <td>Multa Prazo</td>
+            <td>Tipo Carteira</td>
+            <td>Dias Protesto</td>
+            <td>Dias Devolução</td>
+            <td>Especificação Título</td>
+            <td>Emite Remessa Banco</td>
+            <td>Forma Emissão Boleto</td>
+            <td>Tipo Layout</td>
+            <td>Layout Arquivo Remessa</td>
+            <td>Tipo Cobrança</td>
+            <td>Instruções</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Conta Corrente</td>
+            <td>Código Carteira</td>
+            <td>Código Convênio</td>
+            <td>Juros Mês</td>
+            <td>Taxa Cobrança</td>
+            <td>Multa Prazo</td>
+            <td>Tipo Carteira</td>
+            <td>Dias Protesto</td>
+            <td>Dias Devolução</td>
+            <td>Especificação Título</td>
+            <td>Emite Remessa Banco</td>
+            <td>Forma Emissão Boleto</td>
+            <td>Tipo Layout</td>
+            <td>Layout Arquivo Remessa</td>
+            <td>Tipo Cobrança</td>
+            <td>Instruções</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Conta Corrente</td>
+            <td>Código Carteira</td>
+            <td>Código Convênio</td>
+            <td>Juros Mês</td>
+            <td>Taxa Cobrança</td>
+            <td>Multa Prazo</td>
+            <td>Tipo Carteira</td>
+            <td>Dias Protesto</td>
+            <td>Dias Devolução</td>
+            <td>Especificação Título</td>
+            <td>Emite Remessa Banco</td>
+            <td>Forma Emissão Boleto</td>
+            <td>Tipo Layout</td>
+            <td>Layout Arquivo Remessa</td>
+            <td>Tipo Cobrança</td>
+            <td>Instruções</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Conta Corrente</td>
+            <td>Código Carteira</td>
+            <td>Código Convênio</td>
+            <td>Juros Mês</td>
+            <td>Taxa Cobrança</td>
+            <td>Multa Prazo</td>
+            <td>Tipo Carteira</td>
+            <td>Dias Protesto</td>
+            <td>Dias Devolução</td>
+            <td>Especificação Título</td>
+            <td>Emite Remessa Banco</td>
+            <td>Forma Emissão Boleto</td>
+            <td>Tipo Layout</td>
+            <td>Layout Arquivo Remessa</td>
+            <td>Tipo Cobrança</td>
+            <td>Instruções</td>
+            <td class="minima-td"><a href="" class="icon-table"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="novoCarteira">
+    <div class="card-add">
+    <div class="top-card">Carteira de Cobrança</div>
+
+
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <label for="">Conta Corrente</label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="">
+          <span class="input-group-addon" data-toggle="modal" data-target="#contaModal"><a href="#">&equiv;</a></span>
+        </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <label for="">Código Carteira</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <label for="">Código Convênio</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Juros Mês</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Taxa Cobrança</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Multa Prazo</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Tipo Carteira</label>
+          <select class="form-control" aria-required="true" aria-invalid="false">
+          <option>Protesto</option> 
+          <option>Devolução</option> 
+        </select> 
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Dias Protesto</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Dias Devolução</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Especificação Título</label>
+          <select class="form-control" aria-required="true" aria-invalid="false">
+          <option>Aceite</option> 
+          <option>Não Aceite</option> 
+        </select> 
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Emite Remessa Banco</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Forma Emissão Boleto</label>
+          <select class="form-control" aria-required="true" aria-invalid="false">
+          <option>Cliente Emite</option> 
+          <option>Banco Emite</option> 
+        </select> 
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Tipo Layout</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Layout Arquivo Remessa</label>
+          <select class="form-control" aria-required="true" aria-invalid="false">
+          <option>Cnab240</option> 
+          <option>Cnab400</option> 
+        </select> 
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <label for="">Tipo Cobrança</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <label for="">Instruções</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="bottom-card">
+      <button class="btn btn-info space-column">Cancelar</button>
+      <span id="incluirCarteira">
+      <button class="btn btn-primary space-column">Incluir</button>
+      </span>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+</div> <!-- /#page-content-wrapper -->
+
+</div> <!-- /#wrapper -->
+
+<footer>
+  <div class="text-footer">
+    <span>Desenvolvido por&nbsp;<a href="http://www.bredas.com.br" target="_blank">Breda's Sistemas</a></span>
+  </div>
+</footer>
+
+</div><!-- /#app -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/base/js/nav.js"></script>
+<script src="../../assets/base/js/side-bar.js"></script>
+
+<script type="text/javascript">
+  
+   /* ------------- Carteira -------------- */
+
+    document.getElementById("listaCarteira").style.display = "block";
+    document.getElementById("novoCarteira").style.display = "none";
+
+    document.getElementById("addCarteira").addEventListener("click", function(){
+      document.getElementById("listaCarteira").style.display = "none";
+      document.getElementById("novoCarteira").style.display = "block";
+    });
+
+    document.getElementById("incluirCarteira").addEventListener("click", function(){
+      document.getElementById("listaCarteira").style.display = "block";
+      document.getElementById("novoCarteira").style.display = "none";
+    });
+
+   /*  -------------------------------- */
+
+</script>
+
+</body>
+</html>

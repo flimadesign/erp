@@ -3,7 +3,6 @@
 /* Toggle Styles */
 
 #wrapper {
-    padding-left: 40px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -11,7 +10,11 @@
     flex-direction: column;
     flex: 1 0 auto;
     display: flex;
+    overflow-y: hidden;
     display: -webkit-flex;
+    /*min-width: 950px;
+    overflow-x: scroll;*/
+
 }
 
 #wrapper.toggled {
@@ -20,11 +23,10 @@
 
 
 #sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
+    /*z-index: 1000;
+    position: fixed;*/
     left: 250px;
     width: 40px;
-    overflow-x: hidden;
     height: 100%;
     margin-left: -250px;
     overflow-y: hidden;
@@ -50,7 +52,9 @@
     width: 100%;
     flex-direction: column;
     flex: 1 0 auto;
+    height: 100%;
     display: flex;
+    padding-top: 55px;
     display: -webkit-flex;
 }
 
@@ -61,32 +65,33 @@
 }
 
 .sidebar-brand {
-    height: 111px !important;
+        height: 55px !important;
     position: relative;
     cursor: initial !important;
     display: -webkit-flex;
+    background-color: #098fd7;
+    color: #fff !important;
+    width: 55px;
+    /* border-right: 1px solid #55a4ce; */
+    justify-content: center;
     display: flex;
-     border-bottom: 1px solid #dde1e4;
     align-items: center;
-    padding-left: 8px;
 }
 
 .sidebar-brand a {
-    color: #bbc0c5 !important;
+    color: #ffffff !important;
     text-decoration: none;
     font-size: 21px;
     position: relative;
-    display: -webkit-flex;
-    display: flex;
-    align-self: flex-start;
-    margin-top: 7px;
-    margin-left: 1px;
-    float: left;
+    /* display: -webkit-flex; */
+    /* display: flex; */
+    line-height: 0;
+    /* align-self: flex-start; */
+    /* margin-top: 7px; */
+    /* margin-left: 1px; */
+    /* float: left; */
 }
 
-.sidebar-brand:hover {
-    background-color: #fff !important;
-}
 
 #icon-logo {
     -webkit-transition: all 0.2s ease;
@@ -105,7 +110,7 @@ body, html {
    font-size: 16px;
    font-weight: 400;
    color: #000000;
-   height: 55px;
+   height: 56px;
    line-height: 16px;
    margin: 0;
    font-family: 'Roboto', sans-serif;
@@ -139,6 +144,12 @@ background-color: #f0f2f5;
     margin: 0;
     padding: 0;
     list-style: none; 
+    overflow-y: auto;
+    background-color: #fff;
+    overflow-x: hidden;
+        padding-top: 55px;
+        padding-bottom: 50px;
+    height: 100%;
 }
 
 #sidebar-wrapper > .sidebar-nav li {
@@ -154,6 +165,7 @@ background-color: #f0f2f5;
   top: 0;
   right: 0;
   color: #777;
+      font-size: 12px;
   cursor: pointer;
    -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
@@ -214,8 +226,6 @@ background-color: #f0f2f5;
 }
 
 
-
-
 #wrapper.toggled > #sidebar-wrapper > .sidebar-nav li.openInner ul.nhoodDropInner {
   display: block;
   position: relative !important;
@@ -239,6 +249,7 @@ background-color: #f0f2f5;
 
 
 #wrapper > #sidebar-wrapper > .sidebar-nav li.openInner ul.nhoodDropInner li {
-    padding-left: 20px;
+    padding-left: 4
+    0px;
     padding-right: 20px;
 }

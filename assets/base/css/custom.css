@@ -1014,6 +1014,13 @@ select .form-control {
 }
 
 
+@media (max-width: 1200px) {
+.row-min {
+  display: block;
+}
+}
+
+
 
 .modal-body > form > .card-add {
   padding-top: 15px;

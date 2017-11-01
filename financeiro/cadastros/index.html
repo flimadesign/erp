@@ -26,25 +26,48 @@
 
 <div id="app" class="bg-gray-1">
 
+<div class="topo">
+  <div class="sidebar-brand">
+        <a href="#menu-toggle" id="menu-toggle"><i class="ti-menu" aria-hidden="true">&nbsp;</i></a>
+      </div>
+
+
+      <div class="nav-bar">
+
+        <div class="logo">Venda Simples</div>
+
+
+
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="#">Configurar</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sair</a></li>
+              </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
   <div id="wrapper" class="toggled">
+
 
    <!-- Sidebar -->
    <div id="sidebar-wrapper" class="bg-white">
-
-
-    <div class="sidebar-brand">
-
-
-        <a href="#menu-toggle" id="menu-toggle"><i class="ti-menu" aria-hidden="true">&nbsp;</i></a>
-    </div>
-
 
 
 
     <ul id="ul-sidebar" class="sidebar-nav">
 
       <li class="nhoodDrop active openInner">
-        <a href="#" class="nhoodButton expand-li"><i class="ti-clipboard" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Cadastros</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <a href="#" class="nhoodButton expand-li"><i class="ti-layout" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Inicio</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
         <ul class="nhoodDropInner top expand-li">
           <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
           <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
@@ -54,8 +77,70 @@
           <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
         </ul>
       </li>
-      <li><a href="http://localhost/novoerp2/financeiro/movimento-financeiro/index.html?#" class="nhoodButton"><i class="ti-bar-chart-alt" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Financeiro</span></a></li>
-      <li><a href="http://localhost/novoerp2/financeiro/movimento-bancario/index.html?#" class="nhoodButton"><i class="ti-exchange-vertical" aria-hidden="true"></i><span class="text-li-sidebar">Movimento Bancário</span></a></li>
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-clipboard" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Cadastros</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Parceiros</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Produtos</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Vendedores</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Tributos</a></li>
+        </ul>
+      </li>
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-package" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Compras</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-shopping-cart" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Vendas</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-truck" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Logística</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-stats-up" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Financeiro</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
+      <li class="nhoodDrop">
+        <a href="#" class="nhoodButton expand-li"><i class="ti-settings" alt="Cadastros" aria-hidden="true"></i><span class="text-li-sidebar">Serviços</span></a> <i class="ti-angle-down dropTrigger expand-li"></i>
+        <ul class="nhoodDropInner top expand-li">
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Tipo Documento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/forma.html?#">Forma Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/condicao.html?#">Condição Pagamento</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/banco.html?#">Banco</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/carteira.html?#">Carteira Cobrança</a></li>
+          <li><a href="http://localhost/novoerp2/financeiro/cadastros/plano.html?#">Plano de Conta</a></li>
+        </ul>
+      </li>
 
     </ul>
 
@@ -77,61 +162,6 @@
 
   <div id="page-content-wrapper">
 
-
-    <nav class="navbar" role="navigation">
-
-      <div class="container-fluid">
-
-        
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-
-        <div class="navbar-collapse collapse" id="navbar-main">
-        <ul class="nav navbar-nav navbar-left">
-          <li>
-            <a href="http://localhost/novoerp2/inicio/acesso/index.html?#">Início</a>
-          </li>
-          <li>
-            <a href="http://localhost/novoerp2/cadastros/parceiro/index.html?#">Cadastros</a>
-          </li>
-          <li>
-            <a href="http://localhost/novoerp2/compras/requisicao/index.html?#">Compras</a>
-          </li>
-          <li>
-            <a href="http://localhost/novoerp2/vendas/index.html?#">Vendas</a>
-          </li>
-          <li>
-            <a href="http://localhost/novoerp2/logistica/index.html?#">Logística</a>
-          </li>
-          <li class="active">
-            <a href="http://localhost/novoerp2/financeiro/cadastros/index.html?#">Financeiro</a>
-          </li>
-          <li>
-            <a href="http://localhost/novoerp2/servicos/index.html?#">Serviços</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
-          </li>
-          <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes"><i class="fa fa-user" aria-hidden="true"></i> <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="#">Configurar</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Sair</a></li>
-              </ul>
-            </li>
-        </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav><!-- /.navbar -->
 
 
     <div class="box-top-bar bg-white">
@@ -223,11 +253,11 @@
 
 
       <div class="row">
-        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
           <label for="">Descrição</label>
           <input type="text" class="form-control" placeholder="">
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
           <label for="">Tipo</label>
           <select class="form-control">
             <option>Pagar</option>
